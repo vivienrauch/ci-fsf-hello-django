@@ -3,8 +3,16 @@ from django.test import TestCase
 # Create your tests here.
 
 
-class TestDjango(TestCase):
+class TestViews(TestCase):
 
-    def test_this_thing_works(self):
-        self.assertEqual(1, 1)
+    def test_get_todo_list(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'todo/todo_list.html')
+
+
+    
+
+    
+       
 
