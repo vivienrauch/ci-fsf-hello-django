@@ -1,5 +1,7 @@
 from pathlib import Path
 import os
+if os.path.isfile("env.py"):
+    import env
 import dj_database_url
 import env
 
@@ -87,6 +89,9 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 #    }
 # }
 
+DATABASES = {
+    'default' : dj_database_url.parse('postgres://yephwlra:RozX6Hu2cPTXG627xJTkTBlyU2T_H5RX@balarama.db.elephantsql.com/yephwlra')
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
