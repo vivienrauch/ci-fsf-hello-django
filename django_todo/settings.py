@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-91*)z)bmtzs=)n&i^gx)_+9ulljylzn37!6d12cii!65&_w^-^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['git.heroku.com/django-todo-app-vmr.git']
 
 
 # Application definition
